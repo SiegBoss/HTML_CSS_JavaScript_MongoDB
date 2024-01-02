@@ -1,0 +1,134 @@
+/* Estilos Generales | General Styles */
+body {
+    background-color: #72a24c;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #3c3c3c;
+    padding: 40px;
+}
+
+/* Estilos para la Tabla | Table Styles */
+#dataTable {
+    width: calc(100% - 20%);
+    margin: auto;
+}
+
+#dataTable th {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+
+#userDataBody {
+    background-color: #f2f2f2;
+    font-family: Arial;
+    text-align: center;
+}
+
+
+/* Estilos para el botón de eliminar | Delete Button Styles */
+.deleteButton {
+    transition: background-color 0.3s;
+    background-color: #3c3c3c;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteButton:hover {
+    background-color: #9e2a2b;
+}
+
+
+/*Pie de pagina | Footer*/
+.dark-section {
+    color: #f5f6f7;
+    background-color: #1b1b32;
+}
+
+footer {
+    min-height: 400px;
+}
+
+.footer-page {
+    margin-top: 200px;
+}
+
+.footer-icon {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-text {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.social-media-icons a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.social-media-icons i {
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.social-media-icons a:hover i {
+    color: black;
+}
+
+.Copyright {
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+/* Estilos para pantallas más pequeñas | Styles for smaller screens */
+@media screen and (max-width: 638px) {
+
+    h1 {
+        font-size: 2rem;
+        padding: 20px;
+    }
+
+    #dataTable {
+        width: 80%;
+        overflow-x: auto;
+    }
+
+    #dataTable th {
+        padding: 4px;
+    }
+
+    #userDataBody td {
+        padding: 4px;
+    }
+
+    .deleteButton {
+        padding: 2px 4px;
+        font-size: 10px;
+    }
+}
