@@ -62,6 +62,7 @@ db.once('open', function () {
 
             //Mensaje de éxito al guardar el dato en la consola | Success message when saving the data in the console
             console.log("Dato guardado");
+
             // Enviar una respuesta al cliente | Send a response to the client
             res.status(200).send('Dato guardado exitosamente');
 

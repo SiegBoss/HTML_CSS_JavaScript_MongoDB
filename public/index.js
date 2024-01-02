@@ -5,32 +5,32 @@ const addButton = document.getElementById('addData');
 
 // Agrega un evento de clic al botón con el id 'addData' | Add a click event to the button with the id 'addData'
 addButton.addEventListener('click', async () => {
-    
+
     // Crea un objeto con los datos del formulario | Create an object with the form data
     const data = {
         // Obtiene el valor del campo 'username' | Get the value of the 'username' field
-        username: document.getElementById('username').value,  
+        username: document.getElementById('username').value,
         // Obtiene el valor del campo 'name' | Get the value of the 'name' field
-        name: document.getElementById('name').value,  
+        name: document.getElementById('name').value,
         // Obtiene el valor del campo 'age' | Get the value of the 'age' field
-        age: document.getElementById('age').value,  
+        age: document.getElementById('age').value,
         // Obtiene el valor del campo 'email' | Get the value of the 'email' field
-        email: document.getElementById('email').value, 
+        email: document.getElementById('email').value,
         // Obtiene el valor del campo 'phone' | Get the value of the 'phone' field
-        phone: document.getElementById('phone').value,  
+        phone: document.getElementById('phone').value,
         // Obtiene el valor del campo 'gender' | Gets the value of the 'gender' field
-        gender: document.getElementById('gender').value  
+        gender: document.getElementById('gender').value
     };
 
     // Define las opciones para la solicitud fetch | Define the options for the fetch request
     const options = {
 
         // Método de la solicitud | Request
-        method: 'POST',  
+        method: 'POST',
         // Tipo de contenido de la solicitud | Request content type          
-        headers: {'Content-Type':'application/json'}, 
+        headers: { 'Content-Type': 'application/json' },
         // Convierte los datos del formulario a una cadena JSON | Converts form data to a JSON string
-        body: JSON.stringify(data) 
+        body: JSON.stringify(data)
     };
 
     try {
@@ -47,11 +47,15 @@ addButton.addEventListener('click', async () => {
         // Manejar cualquier error que pueda ocurrir durante la solicitud fetch | Handle any errors that may occur during the fetch request
         console.error('Error:', error);
     }
-    
+
+    // Alerta al usuario que el dato se ha guardado | Alert the user that the data has been saved
+    alert('Dato guardado');
+
+
 });
 
 // Agregar evento de clic al botón "Eliminar" | Add click event to "Delete" button
-deleteButton.addEventListener('click', function() {
+deleteButton.addEventListener('click', function () {
 
     // Obtener referencia al formulario | Get reference to form
     const formData = document.getElementById('dataForm');
