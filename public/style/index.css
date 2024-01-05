@@ -5,23 +5,27 @@ body {
 }
 
 h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
     font-weight: bold;
-    color: #3c3c3c;
-    padding: 40px;
+    letter-spacing: 2px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
 }
 
 form {
     max-width: 400px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
+    margin-top: 40px;
     padding: 20px;
+    border-radius: 10px;
     background-color: #3c3c3c;
     box-shadow: #3c3c3c 0px 0px 10px;
-    border-radius: 10px;
-
 }
 
 form label {
@@ -33,26 +37,26 @@ form label {
 
 /*Estilos de los inputs | Input Styles*/
 .input {
+    font-size: 16px;
     width: calc(100% - 20px);
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 10px;
-    font-size: 16px;
+    border: 1px solid #ccc;
 }
 
 /*Estilo del boton de enviar | Send Button Style*/
 .buttonAdd {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #3c3c3c;
     font-weight: bold;
-    background-color: #fdf6f2;
     cursor: pointer;
     width: calc(100% - 20px);
     padding: 10px;
-    border: 2px solid #72a24c;
     border-radius: 10px;
+    color: #3c3c3c;
+    border: 2px solid #72a24c;
+    background-color: #fdf6f2;
     transition: background-color 0.3s;
 }
 
@@ -65,16 +69,16 @@ form label {
 .buttonDelet {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #3c3c3c;
     font-weight: bold;
-    background-color: #fdf6f2;
-    cursor: pointer;
+    margin-top: 10px;
     width: calc(100% - 20px);
     padding: 10px;
-    border: 2px solid #9e2a2b;
     border-radius: 10px;
+    cursor: pointer;
+    color: #3c3c3c;
+    border: 2px solid #9e2a2b;
+    background-color: #fdf6f2;
     transition: background-color 0.3s;
-    margin-top: 10px;
 }
 
 .buttonDelet:hover {
@@ -86,16 +90,16 @@ form label {
 .buttonDataBase {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    color: #3c3c3c;
     font-weight: bold;
-    background-color: #fdf6f2;
     cursor: pointer;
     width: calc(100% - 20px);
     padding: 10px;
-    border: 2px solid #61a5c2;
     border-radius: 10px;
-    transition: background-color 0.3s;
     margin-top: 40px;
+    color: #3c3c3c;
+    background-color: #fdf6f2;
+    border: 2px solid #61a5c2;
+    transition: background-color 0.3s;
 }
 
 .buttonDataBase:hover {
@@ -124,28 +128,28 @@ footer {
 }
 
 .footer-text {
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.5rem;
     padding: 20px;
     margin-bottom: 30px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .social-media-icons a {
     width: 50px;
     height: 50px;
+    padding: 2px;
+    margin: 10px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2px;
-    margin: 10px;
-    border: 2px solid white;
-    border-radius: 50%;
     transition: all 0.2s ease-in;
+    border: 2px solid white;
 }
 
 .social-media-icons i {
-    color: white;
     font-size: 1.5rem;
+    color: white;
     transition: all 0.2s ease-in;
 }
 
@@ -155,19 +159,19 @@ footer {
 
 .Copyright {
     font-size: 15px;
-    color: #aeaeae;
     padding: 20px;
+    color: #aeaeae;
 }
 
 /* Estilos para pantallas más pequeñas | Styles for smaller screens */
 @media screen and (max-width: 600px) {
     h1 {
-        text-align: center;
-        font-size: 1.5rem;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-        color: #3c3c3c;
+        text-align: center;
+        font-size: 1.5rem;
         padding: 40px;
+        color: #3c3c3c;
     }
 
     form {
@@ -188,10 +192,8 @@ footer {
     .buttonAdd,
     .buttonDelet,
     .buttonDataBase {
-        
         width: 100%;
         font-size: 14px;
         margin-top: 15px;
-
     }
 }
