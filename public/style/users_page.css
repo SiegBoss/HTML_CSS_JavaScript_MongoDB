@@ -18,13 +18,13 @@ h1 {
 
 
 /* Estilos para la Tabla | Table Styles */
-#dataTable {
+#data-table {
     width: calc(100% - 20%);
     margin: auto;
     margin-top: 40px;
 }
 
-#dataTable th {
+#data-table th {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding: 8px;
@@ -32,7 +32,7 @@ h1 {
     border: 1px solid #ddd;
 }
 
-#userDataBody {
+#user-data-body {
     font-family: Arial;
     text-align: center;
     background-color: #f2f2f2;
@@ -41,7 +41,7 @@ h1 {
 
 
 /* Estilos para el botón de eliminar | Delete Button Styles */
-.deleteButton {
+.delete-button {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -51,7 +51,7 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.deleteButton:hover {
+.delete-button:hover {
     background-color: #9e2a2b;
 }
 

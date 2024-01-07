@@ -1,7 +1,7 @@
 // Obtener referencia al botón "Eliminar" | Get reference to "Delete" button
 const deleteButton = document.getElementById('delete');
 // Obtener referencia al botón "Agregar" | Get reference to "Add" button
-const addButton = document.getElementById('addData');
+const addButton = document.getElementById('add-data');
 
 // Agrega un evento de clic al botón con el id 'addData' | Add a click event to the button with the id 'addData'
 addButton.addEventListener('click', async () => {
@@ -49,7 +49,7 @@ addButton.addEventListener('click', async () => {
     }
 
     // Alerta al usuario que el dato se ha guardado | Alert the user that the data has been saved
-    alert('Dato guardado');
+    alert('Dato Guardado');
 
 
 });
@@ -58,7 +58,7 @@ addButton.addEventListener('click', async () => {
 deleteButton.addEventListener('click', function () {
 
     // Obtener referencia al formulario | Get reference to form
-    const formData = document.getElementById('dataForm');
+    const formData = document.getElementById('data-form');
 
     // Restablecer los valores de los campos del formulario | Reset form field values
     formData.reset();

@@ -12,7 +12,7 @@ const deleteUser = async (userId, row) => {
         if (response.ok) {
 
             // Elimina la fila correspondiente de la tabla en el cliente | Delete the corresponding row from the table on the client
-            document.getElementById('userDataBody').removeChild(row);
+            document.getElementById('user-data-body').removeChild(row);
             return true;
         }
 
@@ -32,7 +32,7 @@ fetch('/getUsers')
     .then(users => {
 
         // Obtiene una referencia al cuerpo de la tabla que muestra los datos de los usuarios | Get a reference to the table body that shows the user data
-        const userDataBody = document.getElementById('userDataBody');
+        const userDataBody = document.getElementById('user-data-body');
 
         // Itera a través de cada usuario obtenido
         users.forEach(user => {
@@ -48,14 +48,14 @@ fetch('/getUsers')
                 <td>${user.email}</td>
                 <td>${user.phone}</td>
                 <td>${user.gender}</td>
-                <td><button class="deleteButton">Eliminar</button></td>
+                <td><button class="delete-button">Eliminar</button></td>
             `;
 
             // Agrega un evento de clic al botón de eliminar en cada fila | Add a click event to the delete button on each row
-            row.querySelector('.deleteButton').addEventListener('click', async () => {
+            row.querySelector('.delete-button').addEventListener('click', async () => {
 
                 // Pregunta al usuario si está seguro de que quiere eliminar al usuario seleccionado | Ask the user if he is sure he wants to delete the selected user
-                const confirmed = confirm(`¿Estás seguro que quieres eliminar a ${user.username}?`);
+                const confirmed = confirm(`¿Estás Seguro que Quieres Eliminar a ${user.username}?`);
 
                 if (confirmed) {
                     
@@ -65,7 +65,7 @@ fetch('/getUsers')
                     if (deleted) {
 
                         // Muestra un mensaje en la consola si el usuario se eliminó correctamente | Show a message in the console if the user was deleted successfully
-                        console.log('Usuario eliminado correctamente');
+                        console.log('Usuario Eliminado Correctamente');
                     }
                 }
             });
