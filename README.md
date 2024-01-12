@@ -1,6 +1,7 @@
 # Sistema de Gestión de Usuarios con Node.js, Express y MongoDB
 
 Este proyecto es un sistema de gestión de usuarios que permite a los usuarios realizar algunas operaciones (Crear, Leer y Eliminar) a través de una interfaz web.
+
 La parte del frontend está desarrollada con HTML, CSS y JavaScript, mientras que la lógica del backend se ha implementado utilizando Node.js, Express y Mongoose para interactuar con una base de datos MongoDB.
 
 ## Estructura del Proyecto
