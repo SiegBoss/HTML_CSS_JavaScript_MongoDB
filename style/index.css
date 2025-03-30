@@ -1,0 +1,207 @@
+/* style/index.css */
+
+:root {
+    --background: #fdfcfb;
+    --primary: #8ec5fc;
+    --secondary: #e0c3fc;
+    --accent: #b388eb;
+    --text: #333;
+    --light-gray: #ccc;
+    --input-bg: #fff;
+    --button-bg: #b388eb;
+    --button-hover: #9d6cd6;
+
+    /* Dark mode */
+    --dark-background: #1c1c1e;
+    --dark-primary: #2c2c2e;
+    --dark-secondary: #3a3a3c;
+    --dark-text: #f0f0f0;
+    --dark-input-bg: #2c2c2e;
+    --dark-button-bg: #6e56cf;
+    --dark-button-hover: #5941c8;
+
+    --font: 'Montserrat', sans-serif;
+    --transition-speed: 0.4s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font);
+    transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+}
+
+body {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: var(--text);
+}
+
+body.dark-mode {
+    background: linear-gradient(135deg, var(--dark-primary), var(--dark-secondary));
+    color: var(--dark-text);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: -webkit-linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark-mode h1 {
+    background: -webkit-linear-gradient(45deg, var(--accent), var(--dark-button-bg));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    background: var(--input-bg);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+body.dark-mode form {
+    background: var(--dark-input-bg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    background-color: var(--input-bg);
+    color: var(--text);
+}
+
+.input:focus {
+    border-color: var(--accent);
+    outline: none;
+}
+
+body.dark-mode .input {
+    background-color: var(--dark-secondary);
+    color: var(--dark-text);
+    border-color: #444;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: var(--button-bg);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: var(--button-hover);
+    transform: scale(1.05);
+}
+
+body.dark-mode button {
+    background-color: var(--dark-button-bg);
+}
+
+body.dark-mode button:hover {
+    background-color: var(--dark-button-hover);
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #555;
+}
+
+body.dark-mode footer {
+    color: var(--dark-text);
+}
+
+.footer_icon {
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.footer_text,
+.footer_text_f {
+    margin-bottom: 0.5rem;
+}
+
+.social_media_icons {
+    margin: 1rem 0;
+}
+
+.social_media_icons a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--accent);
+    transition: color 0.3s ease;
+}
+
+.social_media_icons a:hover {
+    color: var(--button-hover);
+}
+
+body.dark-mode .social_media_icons a {
+    color: var(--dark-button-bg);
+}
+
+body.dark-mode .social_media_icons a:hover {
+    color: var(--dark-button-hover);
+}
+
+.Copyright {
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    form {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
